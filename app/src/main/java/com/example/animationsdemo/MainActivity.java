@@ -11,8 +11,11 @@ public class MainActivity extends AppCompatActivity
     public void fade(View view)
     {
 
-        ImageView image = (ImageView) findViewById(R.id.imageCenter);
-        image.animate().alpha(0).setDuration(2000);  // Adds animation to image. setDuration takes milliseconds
+        ImageView imageCat = (ImageView) findViewById(R.id.imageCat);
+        imageCat.animate().alpha(0).setDuration(2000);  // Adds animation to image. setDuration takes milliseconds
+
+        ImageView imageTiger = (ImageView) findViewById(R.id.imageTiger);
+        imageTiger.animate().alpha(1).setDuration(2000);
     }
 
     @Override
